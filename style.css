@@ -1,0 +1,61 @@
+
+body{
+    --couleur-primaire: #ff3131;
+    --couleur-secondaire: black;
+
+}
+
+.headerMain{
+
+    display: flex;
+    justify-content: flex-start;
+}
+.navMain{
+   
+
+
+}
+
+.imgSI{
+    width: 100px;
+    height: 100px;
+}
+
+.imgMain{
+    width: 500px;
+    height: 500px;
+    align-items: center;
+}
+
+.panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+ 
+}
+
+
+.panel1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titre{
+    background-color: var(--couleur-primaire);
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+
+}
+
+.paragraphMain{
+    color: white;
+    background-color: var(--couleur-secondaire);
+    width: 500px;
+    text-align: center;
+    padding: 2px;
+
+}
