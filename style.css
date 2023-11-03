@@ -1,7 +1,7 @@
 
 body{
     --couleur-primaire: #ff3131;
-    --couleur-secondaire: black;
+    --couleur-secondaire: rgb(29, 28, 28);
     margin: 0;
 
 }
@@ -17,29 +17,47 @@ body{
 
 .navMain{
     display: flex;
-    justify-content: space-between;
-    margin: 5px 10px 5px 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px 10px 50px;
+    background-color: var(--couleur-secondaire);
+    margin: 0;
+
+
 
 
 
 }
 
 .logoSI{
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
 
 .mainBtn{
 
-
+    
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    font-weight: bold;
+    width: 150px;
+    
 
 
 }
 
+.navSearch{
+    margin-left: 450px;
+    padding-left: 15px;
+    height: 40px;
+    width: 340px;
+    border-radius: 40px;
+    border: none;
+
+}
 
 
 .imgMain{
@@ -52,7 +70,8 @@ body{
 .panel{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 25px;
+    margin: 50px 50px 0px 50px;
+    
 
  
 }
@@ -74,6 +93,8 @@ body{
     padding: 25px 0px 25px 0px;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+
+
     
 }
 
@@ -85,5 +106,6 @@ body{
     padding: 2px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+
 
 }
