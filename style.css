@@ -3,6 +3,8 @@ body{
     --couleur-primaire: #ff3131;
     --couleur-secondaire: rgb(29, 28, 28);
     margin: 0;
+    overflow-x: hidden;
+
 
 }
 
@@ -114,14 +116,33 @@ body{
 
 
 .mainFooter{
+    display: flex;
     background-color: var(--couleur-primaire);
     min-height: 10vh;
     width: 100%;
+    justify-content: flex-start;
 }
 
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1100px) {
     .panel {
       grid-template-columns: 2fr;
     }
+    .navSearch{
+        margin-left: 10px;
+        width: 100px;
+        margin-top: 15px;
+    }
+    .navMain{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .mainBtn{
+        margin: 0;
+        padding-top: 15px;
+
+    }
+    
  }
