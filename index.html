@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <script  src="scripts.js"> defer</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <!-- La partie "head" sert à link le html avec tes autres fichiers, pour lire le CSS par exemple ou choper des polices sur googleapi -->
@@ -25,14 +27,15 @@
                 <img class ="logoSI" src="images/imageSI.png" alt="Logo principal" />
             </a>
 
-        <select class="mainSelect" href="lapromo.html">
+        <select id="menuDeroulant" onchange="redirectionSelect()" class="mainSelect" >
           <option class ="element"> NOTRE EQUIPE</option>
-          <option class ="element"> La promo</option>
-          <option class ="element"> Les intervenants</option>
-          <option class ="element"> Les projets</option>
+          <option class ="element"> La Promo</option>
+          <option class ="element"> Les Intervenants</option>
+          <option class ="element"> Les Projets</option>
         </select>
         <a class="mainBtn" href="nosobjectifs.html"> NOS OBJECTIFS </a>
         <a class="mainBtn" href="nouscontacter.html"> NOUS CONTACTER </a>
+        <a class="mainBtn" href="quiz.html"> ACTUS </a>
         <a class="mainBtn" href="quiz.html"> FAIRE LE QUIZ </a>
         <input class="navSearch"  placeholder="Rechercher...">
             <!-- <img src="" alt="logo loupe"> --> </input> 
@@ -44,7 +47,7 @@
         <!-- Ici, on crée trois panneaux avec chacun une section pour pouvoir les utiliser en Flexbox dans le CSS de manière plus simple.  -->
         <section class="panel">
             <section class="panel1">
-                <h1 class = "titre"> placeholder </h1>
+                <h1 class = "titre"> Dernier Post  </h1>
             <img class = "imgMain" src="images/placeholder.png" >
             <p class="paragraphMain"> Lorem ipsum dolor sit amet,
                  consectetur adipiscing elit. Integer non egestas lacus,
@@ -53,7 +56,7 @@
             </p>
             </section>
             <section class="panel1"> 
-                <h1 class = "titre"> placeholder </h1>
+                <h1 class = "titre"> Dernière News </h1>
                 <img class = "imgMain" src="images/placeholder.png" >
                 <p class="paragraphMain"> Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit. Integer non egestas lacus,
@@ -62,7 +65,7 @@
                </p>
             </section>
             <section class="panel1"> 
-            <h1 class = "titre"> placeholder </h1>
+            <h1 class = "titre"> Étude de cas  </h1>
             <img class = "imgMain" src="images/placeholder.png" >
             <p class="paragraphMain"> Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Integer non egestas lacus,

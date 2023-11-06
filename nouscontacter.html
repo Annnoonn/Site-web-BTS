@@ -2,7 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>PBS Actus</title>
+    <link rel="icon" type="image/png" href="images/imageSI.png">
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script  src="scripts.js"> defer</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <!-- La partie "head" sert à link le html avec tes autres fichiers, pour lire le CSS par exemple ou choper des polices sur googleapi -->
@@ -23,11 +25,17 @@
             <a href="index.html" class="lien-icone">
                 <img class ="logoSI" src="images/imageSI.png" alt="Logo principal" />
             </a>
-         
-        <a class="mainBtn" href="lapromo.html"> LA PROMO </a>
+
+        <select id="menuDeroulant" onchange="redirectionSelect()" class="mainSelect" >
+          <option class ="element"> NOTRE EQUIPE</option>
+          <option class ="element"> La Promo</option>
+          <option class ="element"> Les Intervenants</option>
+          <option class ="element"> Les Projets</option>
+        </select>
         <a class="mainBtn" href="nosobjectifs.html"> NOS OBJECTIFS </a>
         <a class="mainBtn" href="nouscontacter.html"> NOUS CONTACTER </a>
-        <a class="mainBtn" href="quiz.html"> QUIZ </a>
+        <a class="mainBtn" href="quiz.html"> ACTUS </a>
+        <a class="mainBtn" href="quiz.html"> FAIRE LE QUIZ </a>
         <input class="navSearch"  placeholder="Rechercher...">
             <!-- <img src="" alt="logo loupe"> --> </input> 
       </nav>
