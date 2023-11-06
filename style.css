@@ -1,5 +1,8 @@
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     --couleur-primaire: #ff3131;
     --couleur-secondaire: rgb(29, 28, 28);
     margin: 0;
@@ -8,22 +11,17 @@ body{
 
 }
 
-/* .headerMain{
-    padding: 25px 0px 25px 10px ;
-    display: flex;
 
-    align-items: center;
-    background-color: gray;
-
-} */
 
 .navMain{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns:  auto repeat(7, 1fr) ;
     padding: 10px 10px 10px 50px;
     background-color: var(--couleur-secondaire);
     margin: 0;
+    /* gap: 20px; */
+    align-items: stretch; 
+ 
 
 
 
@@ -34,6 +32,7 @@ body{
 .logoSI{
     width: 80px;
     height: auto;
+
 }
 
 
@@ -43,21 +42,59 @@ body{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    margin-left: 100px;
+    padding-top: 30px;
+    text-align: center;
     font-weight: bold;
     width: 150px;
-    
+    transition: background-color 0.3s;
+    border-radius: 10px ;
 
 
 }
 
+.mainSelect{
+    appearance: none;
+    border: none;
+    background-color: var(--couleur-secondaire);
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-bottom: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 10px ;
+    outline: none
+}
+
+
+.mainSelect option{
+    appearance: none;
+    border: none;
+    background-color: var(--couleur-secondaire);
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 10px ;
+}
+
+.mainSelect:hover{
+    background-size: cover;
+    background-color: rgb(37, 39, 37);
+}
+
 .navSearch{
-    margin-left: 450px;
     padding-left: 15px;
+    margin-top: 22px;
     height: 40px;
     width: 340px;
     border-radius: 40px;
     border: none;
+    grid-column: 7 / 8;
 
 }
 
@@ -73,6 +110,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 50px 50px 100px 50px;
+    align-items: center;
+    
     
     
 
@@ -116,33 +155,53 @@ body{
 
 
 .mainFooter{
-    display: flex;
+
+    display: grid;
+    height: 100%;
     background-color: var(--couleur-primaire);
-    min-height: 10vh;
-    width: 100%;
-    justify-content: flex-start;
+    grid-template-columns: 1fr 1fr 1fr 5fr;
+
+
+
+
+}
+
+
+.logoLinkedin{
+    width: 50%;
+    height: auto;
+    transition: opacity 0.3s;
+    margin-top: 50px;
+}
+
+.linkLinkedin{
+    height: 50%;
+}
+
+.logoLinkedin:hover{
+    opacity: 50%;
+}
+
+.mainBtn:hover{
+    background-size: cover;
+    background-color: rgb(37, 39, 37);
+
 }
 
 
 
-@media (max-width: 1100px) {
+
+@media (max-width: 1024px) {
     .panel {
       grid-template-columns: 2fr;
     }
-    .navSearch{
-        margin-left: 10px;
-        width: 100px;
-        margin-top: 15px;
-    }
+
     .navMain{
-        flex-direction: column;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+
 
     }
-    .mainBtn{
-        margin: 0;
-        padding-top: 15px;
 
-    }
-    
  }
