@@ -1,6 +1,11 @@
 
 
-/* Body global */
+/*global */
+
+.logoSI:hover{
+    opacity: 15%;
+}
+
 
 body{
     display: flex;
@@ -10,6 +15,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     font-family: 'Imprima', sans-serif;
+
 
 }
 
@@ -87,6 +93,7 @@ body::-webkit-scrollbar-track {
 .logoSI{
     width: 80px;
     height: auto;
+    transition: opacity 0.3s;
 
 }
 
@@ -295,19 +302,50 @@ body::-webkit-scrollbar-track {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .galleryTitle{
-    text-decoration: underline;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: 40;
+    font-size: 40px;
 
+}
 
+.horizontal-line {
+    border-bottom: 4px solid #000; /* Couleur et épaisseur de la ligne */
+    width: 25%; /* La ligne prend toute la largeur disponible */
+    margin: 0; /* Marge au-dessus et en dessous de la ligne */
+  }
+
+.gallerySubtitle{
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-weight: 40;
 }
 
 .gallery{
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr ;
-    padding-right: 50px;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr /  300px 300px 300px ;
+    grid-column-gap: 200px;
+    grid-row-gap: 50px;
+
+}
+
+
+.imgGallery{
+    width: 100%;
+    transition: transform 0.3s;
+    user-select: none;
+    cursor: pointer;
+
+    
+
+}
+
+.imgGallery:hover{
+    transform: scale(1.3);
+
 
 }
 
