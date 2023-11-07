@@ -9,7 +9,7 @@ body{
     --couleur-secondaire: rgb(29, 28, 28);
     margin: 0;
     overflow-x: hidden;
-
+    font-family: 'Imprima', sans-serif;
 
 }
 
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-track {
 
     
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+
     color: rgb(255, 255, 255);
     padding: 30px 5px 0px 5px;
     text-align: center;
@@ -109,7 +109,6 @@ body::-webkit-scrollbar-track {
     appearance: none;
     border: none;
     background-color: var(--couleur-secondaire);
-    font-family: "Arial", Helvetica, sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding-bottom: 8px;
@@ -124,7 +123,6 @@ body::-webkit-scrollbar-track {
     appearance: none;
     border: none;
     background-color: var(--couleur-secondaire);
-    font-family: "Arial", Helvetica, sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     padding-bottom: 15px;
@@ -234,5 +232,84 @@ body::-webkit-scrollbar-track {
  }
 
 
+.testMenuDeroulant{
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
 
-  
+ .menuDeroulantBtn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color:var(--couleur-secondaire);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+
+
+.menuDeroulantBtn:hover{
+    background-color: rgb(37, 39, 37);
+}
+
+.listOptions{
+         position: absolute;
+        display: none;
+        flex-direction: column;
+        background-color: var(--couleur-secondaire);
+        padding-right: 364px;
+        padding-bottom: 25px;
+        padding-top: 20px;
+        width: 100%;
+}
+
+.listOptions.show{
+    display: flex;
+}
+
+.option{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: left;
+    border-radius: 16px;
+    transition: background-color 0.3s;
+    padding-bottom: 5px;
+    width: 100%;
+
+}
+
+.option:hover{
+    background-color: rgb(37, 39, 37);
+}
+
+/* Page La Promo */
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.galleryTitle{
+    text-decoration: underline;
+
+
+}
+
+.gallery{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr ;
+    padding-right: 50px;
+
+}
+
+
+
