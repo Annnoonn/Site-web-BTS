@@ -32,13 +32,10 @@ function displayStudentPage() {
   let clickOnImage = document.querySelectorAll(".imgGallery");
   clickOnImage.forEach(function (image) {
     image.addEventListener("click", function () {
-      console.log(image);
       window.location.href = "ficheEleve.html";
     });
   });
 }
-
-function studentPage() {}
 
 function main() {
   displayGallery();
@@ -47,7 +44,6 @@ function main() {
 
 let menuBtn = document.querySelector(".menuDeroulantBtn");
 let listOptions = document.querySelector(".listOptions");
-console.log(listOptions);
 
 menuBtn.addEventListener("mouseenter", function () {
   listOptions.classList.toggle("show");

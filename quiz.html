@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script  src="scripts.js"> defer</script>
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+    <script  src="scripts.js" defer> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <!-- La partie "head" sert à link le html avec tes autres fichiers, pour lire le CSS par exemple ou choper des polices sur googleapi -->
@@ -20,21 +21,22 @@
     <header>
  <!-- Je fais une barre de navigation basique avec des boutons et le logo SI -->
    
-    
+ 
+
         <nav class="navMain">
             <a href="index.html" class="lien-icone">
                 <img class ="logoSI" src="images/imageSI.png" alt="Logo principal" />
             </a>
-
-        <select id="menuDeroulant" onchange="redirectionSelect()" class="mainSelect" >
-          <option class ="element"> NOTRE EQUIPE</option>
-          <option class ="element"> La Promo</option>
-          <option class ="element"> Les Intervenants</option>
-          <option class ="element"> Les Projets</option>
-        </select>
+            <section class="testMenuDeroulant">
+              <button class="menuDeroulantBtn">MENU</button>
+              <div class="listOptions">
+                <a class="option" href="lesprojets.html">Les Projets</a>
+                <a class="option" href="lesintervenants.html">Les Intervenants</a>
+                <a class="option" href="lapromo.html">La Promo</a>
+              </div>
+            </section>
         <a class="mainBtn" href="nosobjectifs.html"> NOS OBJECTIFS </a>
-        <a class="mainBtn" href="nouscontacter.html"> NOUS CONTACTER </a>
-        <a class="mainBtn" href="quiz.html"> ACTUS </a>
+        <a class="mainBtn" href="actus.html"> ACTUS </a>
         <a class="mainBtn" href="quiz.html"> FAIRE LE QUIZ </a>
         <input class="navSearch"  placeholder="Rechercher...">
             <!-- <img src="" alt="logo loupe"> --> </input> 
@@ -42,3 +44,51 @@
 
  
     </header>
+    <main>
+      <section class="mainContent"><h1 class ="galleryTitle"> LE QUIZ  </h1>
+        <div class="horizontal-line"></div>
+        <h2 class="gallerySubtitle"> Testez vos connaissances. </h2>
+      </section>
+
+      <section class = "blockQuiz">
+        <section class = "blockQuestion">
+          <a class="radioTitle">Titre de la question </a>
+          <label class="radioName" for="choix1">Choix 1</label>
+          <input type="radio" class ="radioBtn" id="choix1" name="question1" >
+          <label class="radioName" for="choix2">Choix 2</label>
+          <input type="radio" class ="radioBtn" id="choix2" name="question1">
+          <label class="radioName" for="choix3">Choix 3</label>
+          <input type="radio" class ="radioBtn" id="choix3" name="question1">
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Titre de la question </a>
+          <label class="radioName" for="choix1">Choix 1</label>
+          <input type="radio" class ="radioBtn" id="choix1" name="question2">
+          <label class="radioName" for="choix2">Choix 2</label>
+          <input type="radio" class ="radioBtn" id="choix2" name="question2">
+          <label class="radioName" for="choix3">Choix 3</label>
+          <input type="radio" class ="radioBtn" id="choix3" name="question2">
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Titre de la question </a>
+          <label class="radioName" for="choix1">Choix 1</label>
+          <input type="radio" class ="radioBtn" id="choix1" name="question3">
+          <label class="radioName" for="choix2">Choix 2</label>
+          <input type="radio" class ="radioBtn" id="choix2" name="question3">
+          <label class="radioName" for="choix3">Choix 3</label>
+          <input type="radio" class ="radioBtn" id="choix3" name="question3">
+        </section>
+      </section>
+
+    </main>
+
+    <footer>
+      <!-- Un footer basique avec des liens externes -->
+      <section class="mainFooter">
+        <a class="linkLinkedin" href="https://www.linkedin.com/in/pbsi-actu-017252298/" target="_blank">
+          <img class="logoLinkedin" src="images/logo_linkedin.png">
+        </a>
+        
+    </section>
+    </footer>
+    </body>
