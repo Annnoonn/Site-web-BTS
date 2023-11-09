@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
-    <script  src="scripts.js" defer> </script>
+    <script  src="scriptsQuiz.js" defer> </script>
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <!-- La partie "head" sert à link le html avec tes autres fichiers, pour lire le CSS par exemple ou choper des polices sur googleapi -->
@@ -27,13 +28,15 @@
             <a href="index.html" class="lien-icone">
                 <img class ="logoSI" src="images/imageSI.png" alt="Logo principal" />
             </a>
-
-        <select id="menuDeroulant" onchange="redirectionSelect()" class="mainSelect" >
-          <option class ="element"> NOTRE EQUIPE</option>
-          <option class ="element"> La Promo</option>
-          <option class ="element"> Les Intervenants</option>
-          <option class ="element"> Les Projets</option>
-        </select>
+            <section class="testMenuDeroulant">
+              <button class="menuDeroulantBtn">MENU</button>
+              <div class="listOptions">
+                <a class="option" href="lesprojets.html">Les Projets</a>
+                <a class="option" href="lesintervenants.html">Les Intervenants</a>
+                <a class="option" href="lapromo.html">La Promo</a>
+                <a class="option" href="nouscontacter.html">Nous contacter</a>
+              </div>
+            </section>
         <a class="mainBtn" href="nosobjectifs.html"> NOS OBJECTIFS </a>
         <a class="mainBtn" href="actus.html"> ACTUS </a>
         <a class="mainBtn" href="quiz.html"> FAIRE LE QUIZ </a>
@@ -51,32 +54,203 @@
 
       <section class = "blockQuiz">
         <section class = "blockQuestion">
-          <a class="radioTitle">Titre de la question </a>
-          <label class="radioName" for="choix1">Choix 1</label>
-          <input type="radio" class ="radioBtn" id="choix1" name="question1" >
-          <label class="radioName" for="choix2">Choix 2</label>
-          <input type="radio" class ="radioBtn" id="choix2" name="question1">
-          <label class="radioName" for="choix3">Choix 3</label>
-          <input type="radio" class ="radioBtn" id="choix3" name="question1">
+          <a class="radioTitle">Qu'est-ce que signifie l'acronyme ESN? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Économie Sociale et Numérique</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question1" >
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">Entreprise de Services Numériques </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question1">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Échange de Services Nominatifs</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question1">
+          </div>
         </section>
         <section class = "blockQuestion">
-          <a class="radioTitle">Titre de la question </a>
-          <label class="radioName" for="choix1">Choix 1</label>
-          <input type="radio" class ="radioBtn" id="choix1" name="question2">
-          <label class="radioName" for="choix2">Choix 2</label>
-          <input type="radio" class ="radioBtn" id="choix2" name="question2">
-          <label class="radioName" for="choix3">Choix 3</label>
-          <input type="radio" class ="radioBtn" id="choix3" name="question2">
+          <a class="radioTitle">Quel est le rôle principal d'une ESN?</a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Une école de l’école supérieure Nationale</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question2">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">Fournir des services numériques et informatiques </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question2">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Gérer des ressources naturelles</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question2">
+          </div>
         </section>
         <section class = "blockQuestion">
-          <a class="radioTitle">Titre de la question </a>
-          <label class="radioName" for="choix1">Choix 1</label>
-          <input type="radio" class ="radioBtn" id="choix1" name="question3">
-          <label class="radioName" for="choix2">Choix 2</label>
-          <input type="radio" class ="radioBtn" id="choix2" name="question3">
-          <label class="radioName" for="choix3">Choix 3</label>
-          <input type="radio" class ="radioBtn" id="choix3" name="question3">
+          <a class="radioTitle">Pour un dirigeant TPE/PME est-il important de s'informent à l’actu technologique ? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">NON, c'est une perte de temps</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question3">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">Oui, mon l'entreprise peut rester à jour avec les avancées technologiques </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question3">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Pas forcement, il faut maintenir la stabilité</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question3">
+          </div>
         </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Comment digitaliser son entreprise ? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">En ignorant les nouvelles technologies</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question4">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">En s’appuient sur un spécialiste en informatique  pour accompagnant  la transition </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question4">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">En se limitant aux services traditionnels</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question4">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Qu'est-ce que l'acronyme anglais "IT" signifie en français ? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Le nom d’un film d’alien</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question5">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">Informations Techniques</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question5">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix3"> Système d’information </label>
+            <input type="radio" class ="radioBtn" id="choix3" name="question5">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Pourquoi les entreprises externalisent leur SI? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Par flemme de le faire soi-même</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question6">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">Par besoin de compétences et d’expertise </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question6">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Pour augmenter les intermédiaires de l’entreprise</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question6">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Quel réflexe faut-il ne pas avoir avec un mot de passe ? </a>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix1">Utiliser le même sur tous ces comptes pour plus de facilité </label>
+            <input type="radio" class ="radioBtn" id="choix1" name="question7">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">Qu’il fasse au moins 8 caractères</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question7">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Le mettre sur un logiciel qui le crypte et sauvegarde</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question7">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Quelle est l'importance d'utiliser des mots de passe forts? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Pour impressionner vos collègues</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question8">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">Pour éviter d'oublier son mot de passe</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question8">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix3">Pour renforcer la sécurité en rendant difficile leur déchiffrage </label>
+            <input type="radio" class ="radioBtn" id="choix3" name="question8">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Quel est le mot de passe le plus fort parmi les 3 suivants ? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">dragon96</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question9">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">mdp123</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question9">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix3"> gkcLORDI$123 </label>
+            <input type="radio" class ="radioBtn" id="choix3" name="question9">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Qu'est-ce que le fishing? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">Une méthode d'attaque par saturation de requêtes</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question10">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">Une technique de vol d'informations en se faisant passer pour une entité de confiance </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question10">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Le nom technique quand on change l’hameçon d’une canne à pêche</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question10">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">À quoi sert généralement un logiciel antivirus? </a>
+          <div class="questionContainer">
+            <label class="radioName" for="choix1">À accélérer la vitesse d'un ordinateur</label>
+            <input type="radio" class ="radioBtnF" id="choix1" name="question11">
+          </div>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix2">À détecter et supprimer les logiciels malveillants </label>
+            <input type="radio" class ="radioBtn" id="choix2" name="question11">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">À créer des sauvegardes automatiques</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question11">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Qu'est-ce qu'une vulnérabilité logicielle? </a>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix1">Une faiblesse dans un programme pouvant être exploitée par des attaquants </label>
+            <input type="radio" class ="radioBtn" id="choix1" name="question12">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">Un programme antivirus performant</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question12">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Un manque de batterie</label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question12">
+          </div>
+        </section>
+        <section class = "blockQuestion">
+          <a class="radioTitle">Sélectionner l’enjeu de la cybersécurité ? </a>
+          <div class="questionContainer">
+            <label class="radioNameV" for="choix1">Révéler les secrets</label>
+            <input type="radio" class ="radioBtn" id="choix1" name="question13">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix2">Rendre difficile la vie des utilisateurs en ajoutant plusieurs contraintes comme les mots de passe longs et complexes</label>
+            <input type="radio" class ="radioBtnF" id="choix2" name="question13">
+          </div>
+          <div class="questionContainer">
+            <label class="radioName" for="choix3">Protéger le système d’information </label>
+            <input type="radio" class ="radioBtnF" id="choix3" name="question13">
+          </div>
+        </section>
+
+        <button class="sendBtn">RÉSULTATS</button>
+        <p class ="resultText"> Salut </p>
       </section>
 
     </main>
@@ -87,7 +261,12 @@
         <a class="linkLinkedin" href="https://www.linkedin.com/in/pbsi-actu-017252298/" target="_blank">
           <img class="logoLinkedin" src="images/logo_linkedin.png">
         </a>
-        
-    </section>
+        <a class="Pole BTS Alternance" href="https://polebtsalternance.fr/" target="_blank">
+          <img class="logoPBA" src="images/logo_PBA.png">
+        </a>
+        <a class="instagram" href="https://instagram.com/pbsi_actu?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank">
+          <img class="logoInstagram" src="images/logo_Insta.jpg">
+        </a>
+    </section> 
     </footer>
     </body>

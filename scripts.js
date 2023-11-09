@@ -1,4 +1,6 @@
 function displayGallery() {
+  const imgGrid = document.querySelector(".gallery");
+  console.log(imgGrid);
   const photos = [
     "images/placeholder.png",
     "images/placeholder.png",
@@ -21,10 +23,10 @@ function displayGallery() {
   ];
 
   photos.forEach((photo) => {
-    const img = document.createElement("img");
-    img.src = photo;
-    imgGrid.appendChild(img);
-    img.classList.add("imgGallery");
+    const imgConst = document.createElement("img");
+    imgConst.src = photo;
+    imgGrid.appendChild(imgConst);
+    imgConst.classList.add("imgGallery");
   });
 }
 
@@ -35,6 +37,13 @@ function displayStudentPage() {
       window.location.href = "ficheEleve.html";
     });
   });
+}
+
+function correctAnswer() {
+  let radioAnswer = document.querySelectorAll(".radioBtn");
+  console.log(radioAnswer);
+  const correctAnswer = ["choix1", "choix3", "choix2"];
+  let usrAnswer = [];
 }
 
 function main() {
