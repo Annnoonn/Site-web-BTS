@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>PBS Actus</title>
-    <link rel="icon" type="image/png" href="images/imageSI.png">
+    <link rel="icon" type="image/png" href="images/imageSI.png" />
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,78 +11,152 @@
       href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <script  src="scripts.js" defer> </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imprima&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <!-- La partie "head" sert à link le html avec tes autres fichiers, pour lire le CSS par exemple ou choper des polices sur googleapi -->
 
   <body>
     <header>
- <!-- Je fais une barre de navigation basique avec des boutons et le logo SI -->
-   
-    
-        <nav class="navMain">
-            <a href="index.html" class="lien-icone">
-                <img class ="logoSI" src="images/imageSI.png" alt="Logo principal" />
-            </a>
+      <!-- Je fais une barre de navigation basique avec des boutons et le logo SI -->
 
-        <select id="menuDeroulant" onchange="redirectionSelect()" class="mainSelect" >
-          <option class ="element"> NOTRE EQUIPE</option>
-          <option class ="element"> La Promo</option>
-          <option class ="element"> Les Intervenants</option>
-          <option class ="element"> Les Projets</option>
+      <nav class="navMain">
+        <a href="index.html" class="lien-icone">
+          <img class="logoSI" src="images/imageSI.png" alt="Logo principal" />
+        </a>
+
+        <select
+          id="menuDeroulant"
+          onchange="redirectionSelect()"
+          class="mainSelect"
+        >
+          <option class="element">NOTRE EQUIPE</option>
+          <option class="element">La Promo</option>
+          <option class="element">Les Intervenants</option>
+          <option class="element">Les Projets</option>
         </select>
         <a class="mainBtn" href="nosobjectifs.html"> NOS OBJECTIFS </a>
         <a class="mainBtn" href="actus.html"> ACTUS </a>
-        <a class="mainBtn" href="quiz.html">  FAIRE LE QUIZ </a>
-        <input class="navSearch"  placeholder="Rechercher..."/>
-
+        <a class="mainBtn" href="quiz.html"> FAIRE LE QUIZ </a>
+        <input class="navSearch" placeholder="Rechercher..." />
       </nav>
-
- 
     </header>
-    <section>
-      <div>
-        <h1 class="contactTitle">Nous contacter</h1>
 
-          <h4>Contacter l'établissement</h4>
-                <p>Adresse : 9b Rue de Kervézennec, 29200 Brest</p>
-                <p>Téléphone : 0622 11 82 52</p>
-          <h4> Horaire d'ouverture </h4>
-          <table caption>Horaire d'ouverture</caption>
-            <thead>
-            <tr>
-            <th>Jours d'ouverture</th>
-            <th colspan="2">Horaires</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td>Lundi</td>
-            <td>09:00 - 18:00</td>
-            </tr>
-            <tr>
-            <td>Mardi</td>
-            <td>09:00 - 18:00</td>  
-            </tr>
-              <tr>
-            <td>Mercredi</td>
-                <td>09:00 - 18:00</td>
-              </tr>
-              <tr>
-                <tr>
-            <td>Jeudi</td>
-                  <td>09:00 - 18:00</td>
-                  <tr>
-            <td>Vendredi</td>
-            <td>09:00 - 18:00</td>        
-            </tbody>
-            </table>
-            <h4>O&ugrave; sommes-nous?</h4>
-<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.9874355071483!2d-4.4604889232093505!3d48.418385531569655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816ba4c91d878e5%3A0xdaa1d2f970d18950!2s9b%20Rue%20de%20Kerv%C3%A9zennec%2C%2029200%20Brest!5e0!3m2!1sfr!2sfr!4v1699539920334!5m2!1sfr!2sfr" width="800" height="600" allowfullscreen=""></iframe></p>
-<p>Formulaire de Contact</p>
-<h1>Contactez-nous &#128512;</h1>
-<!-- <?php
+    <main>
+      <section class="mainContent">
+        <h1 class="galleryTitle">NOUS CONTACTER</h1>
+        <div class="horizontal-line"></div>
+      </section>
+
+      <section class="firstHalfPage">
+        <section class="fullContent">
+          <section class="contactEtab">
+            <section >
+              <h2 class="titleContact">Contacter l'établissement</h2>
+              <div class="horizontal-line2"></div>
+            </section>
+
+            <section class="subTitleStyle">
+              <img
+                class="logoTel"
+                src="images/Logo Tel.png"
+                alt="Description du logo"
+              />
+              <h3>Par téléphone :</h3>
+            </section>
+
+            <a>06 22 11 85 52</a>
+
+            <section class="subTitleStyle">
+              <img
+                class="logoMail"
+                src="images/Mail.png"
+                alt="Description du logo"
+              />
+              <h3>Par Mail :</h3>
+            </section>
+            <a>adressmail@gmail.com</a>
+          </section>
+
+          <section class="tableauHoraires">
+            <article>Lundi</article>
+            <article>09:00 - 18:00</article>
+            <article>Mardi</article>
+            <article>09:00 - 18:00</article>
+            <article>Mercredi</article>
+            <article>09:00 - 18:00</article>
+            <article>Jeudi</article>
+            <article>09:00 - 18:00</article>
+            <article>Vendredi</article>
+            <article>09:00 - 18:00</article>
+            <article>Samedi-Dimanche</article>
+            <article>Fermé</article>
+          </section>
+
+          <section class="adressContact">
+            <h3>Adresse :</h3>
+            <p>9b Rue de Kervézennec </p>
+            <p>29200 BREST </p>
+          </section>
+          
+
+        </section>
+
+        <section class="FormContact">
+          <section>
+            <h2 class="titleContact">Formulaire de Contact</h2>
+            <div class="horizontal-line2"></div>
+          </section>
+
+          <section class="formArea">
+            <section class="formTitle">
+              <input type="text" class="mailField" placeholder="Votre adresse mail"/>
+              <input type="text" class="mailDestinataire" placeholder="adressmail@gmail.com" readonly />
+            </section>
+            <input type="text" class="mailField" placeholder="Objet"/>       
+            <textarea class="formTextarea" placeholder="Saisissez le texte"></textarea>
+            <button class="sendForm">Envoyer</button>
+          </section>
+        </section>
+
+
+      </section>
+
+      <section class="secondHalfPage">
+
+        <section class="mapPBA">
+          <section class="titleMap">
+            <h2 class="titleContact">Retrouvez nous !</h2>
+            <div class="horizontal-line2"></div>
+          </section>
+        <p>
+          <iframe
+            style="border: 0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.9874355071483!2d-4.4604889232093505!3d48.418385531569655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4816ba4c91d878e5%3A0xdaa1d2f970d18950!2s9b%20Rue%20de%20Kerv%C3%A9zennec%2C%2029200%20Brest!5e0!3m2!1sfr!2sfr!4v1699539920334!5m2!1sfr!2sfr"
+            width="800"
+            height="600"
+            allowfullscreen=""
+          ></iframe>
+        </p>
+      </section>
+
+      <section class="socialPart">
+        <section >
+          <h2 class="titleContact">Réseaux sociaux</h2>
+          <div class="horizontal-line2"></div>
+        </section>
+
+       
+
+      </section>
+
+      </section>
+
+        <!-- <?php
 <form action="traitement.php" method="post"><label for="nom">Nom :</label> <input id="nom" name="nom" required="" type="text" /><br /><br /> <label for="email">E-mail :</label> <input id="email" name="email" required="" type="email" /><br /><br /> <label for="message">Message :</label> <textarea id="message" name="message" required="" rows="4"></textarea><br /><br /> <input type="submit" value="Envoyer" /></form>
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données soumises par le formulaire
@@ -108,24 +182,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
  -->
+      </section>
+    </main>
 
-        
-        
-
-
-    </section>
     <footer>
       <section class="mainFooter">
-        <a class="linkLinkedin" href="https://www.linkedin.com/in/pbsi-actu-017252298/" target="_blank">
-          <img class="logo" src="images/logo_linkedin.png">
+        <a
+          class="linkLinkedin"
+          href="https://www.linkedin.com/in/pbsi-actu-017252298/"
+          target="_blank"
+        >
+          <img class="logo" src="images/logo_linkedin.png" />
         </a>
-        <a class="Pole BTS Alternance" href="https://polebtsalternance.fr/" target="_blank">
-          <img class="logo" src="images/logo_PBA.png">
+        <a
+          class="Pole BTS Alternance"
+          href="https://polebtsalternance.fr/"
+          target="_blank"
+        >
+          <img class="logo" src="images/logo_PBA.png" />
         </a>
-        <a class="instagram" href="https://instagram.com/pbsi_actu?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank">
-          <img class="logo" src="images/logo_Insta.png">
+        <a
+          class="instagram"
+          href="https://instagram.com/pbsi_actu?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
+          target="_blank"
+        >
+          <img class="logo" src="images/logo_Insta.png" />
         </a>
-        
-    </section>
-  </footer>
-      
+      </section>
+    </footer>
+  </body>
+</html>

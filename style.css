@@ -62,11 +62,7 @@ body::-webkit-scrollbar-track {
 
 }
 
-.linkLinkedin{
-    height: 100%;
-    padding-left: 20px;
 
-}
 
 .logo:hover{
     opacity: 50%;
@@ -196,7 +192,7 @@ body::-webkit-scrollbar-track {
 }
 
 
-::placeholder{
+.navSearch::placeholder{
     color: white;
 }
 
@@ -481,21 +477,19 @@ input[type='radio'] {
 
 /* Page ACTUS */
 
-.slideshow-container {
-    width: 500px;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
-}
 
 .slides {
-    display: none;
+
     position: relative;
+
+
 }
 
-img {
-    width: 100%;
-    height: 100%;
+.imgSlide {
+    width: 500px;
+    height: 400px;
+
+
 }
 
 .previous, .next{
@@ -516,4 +510,196 @@ img {
 
 .next {
     right:0;
+}
+
+
+
+
+/* Page Nous Contacter */
+
+
+.firstHalfPage{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.FormContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titleContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.headerPage{
+    display: flex;  
+    flex-direction: column;
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+.subTitleStyle{
+    display: flex;
+    margin-top: 15px;
+
+
+}
+
+
+.logoTel{
+    padding: 0px 5px 0px 0px;
+    width: auto;
+    height: 20px;
+}
+
+.logoMail{
+    padding: 5px 5px 0px 0px;
+    width: auto;
+    height: 15px;
+}
+
+.titleContact{
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 23px;
+    width: 300px;
+
+}
+
+.horizontal-line2{
+    align-items: center;
+    border-bottom: 4px solid #000; 
+    width: 270px;
+    margin: 0;
+}
+
+.tableauHoraires{
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.adressContact{
+    margin-right: 150px;
+    margin-top: 25px;
+}
+
+
+.formArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.formTitle{
+    display: flex;
+}
+
+.mailField{
+   margin-top: 20px;
+   margin-right: 5px;
+   padding: 5px;
+   border: none;
+   border-radius: 10px;
+   color: #000000;
+   background-color: #E1E1E1;
+   width: 250px;
+}
+
+.mailField::placeholder{
+    color: #AEAEAE;
+}
+
+.mailDestinataire{
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    background-color: #E1E1E1;
+    width: 250px;
+ }
+
+ .mailDestinataire::placeholder{
+    color: var(--couleur-secondaire);
+ }
+
+.formTextarea{
+    resize: none;
+    margin-top: 20px;
+   padding: 5px;
+   border: none;
+   border-radius: 10px;
+   color: #000000;
+   background-color: #E1E1E1;
+   width: 520px;
+   height: 250px;
+}
+
+.formTextarea::placeholder{
+    color: #AEAEAE;
+    font-family: 'Imprima', sans-serif;
+}
+
+.sendForm{
+ 
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--couleur-secondaire);
+    border-radius: 10px;
+    cursor : pointer;
+    transition: background-color 0.3s;
+}
+
+.sendForm:hover{
+    background-color: #555;
+}
+
+
+.adressContact p{
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+
+.secondHalfPage{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.mapPBA{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.socialPart{
+    display: flex;
+    flex-direction: column;
 }
