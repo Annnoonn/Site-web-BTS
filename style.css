@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     font-family: 'Imprima', sans-serif;
 
+
     
 
 
@@ -521,28 +522,42 @@ input[type='radio'] {
 .firstHalfPage{
     display: flex;
     justify-content: space-evenly;
+
 }
 
+.contactEtab{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
 
+.contactEtabTitle{
+    text-align: center;
+    width: 80%;
+    margin-left: 50px;
+}
 .FormContact{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
+
+
+.formContactTitle{
+    width: 50%;
+    margin-left: 130px;
+}
+
 
 .fullContent{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
-.titleContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
+
 
 .headerPage{
     display: flex;  
@@ -556,8 +571,9 @@ h3{
 
 .subTitleStyle{
     display: flex;
-    margin-top: 15px;
-
+    margin: 15px 0px 5px 0px;
+    width: 100%;
+    
 
 }
 
@@ -579,21 +595,21 @@ h3{
     margin-bottom: 0;
     text-align: center;
     font-size: 23px;
-    width: 300px;
+
 
 }
 
 .horizontal-line2{
-    align-items: center;
+
     border-bottom: 4px solid #000; 
-    width: 270px;
+    width: 100%;
     margin: 0;
 }
 
 .tableauHoraires{
     display: grid;
     grid-template-columns: repeat(2, 170px);
-    margin-left: 70px;
+ 
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -690,16 +706,48 @@ h3{
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
+
 }
 
 .mapPBA{
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
 }
+
+.titleMap{
+    width: 50%;
+    margin-left: 100px;
+}
+
 
 
 .socialPart{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    margin-right: 60px;
+
+}
+
+.socialPartTitle{
+    width: 50%;
+    margin-left: 90px;
+
+}
+
+.imgSocialPart{
+    display: flex;
+    margin-right: 70px;
+}
+
+.imgReseau{
+    height: 80px;
+    width: auto;
+    margin: 20px;
+    transition: opacity 0.1s;
+}
+
+.imgReseau:hover{
+    opacity: 0.5;
 }
